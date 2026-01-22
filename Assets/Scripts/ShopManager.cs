@@ -9,7 +9,7 @@ public class ShopManager : MonoBehaviour
 
     private void Awake()
     {
-        goldmanager = FindFirstObjectByType<GoldManager>();
+        //Bonsoir
     }
 
     public void OpenShop(TowerSpawn towerToSelect)
