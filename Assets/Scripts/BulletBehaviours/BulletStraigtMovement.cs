@@ -7,7 +7,10 @@ public class BulletStraigtMovement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        targetDirection = (mbb.targetEnemy.transform.position-transform.position);
+        if(mbb.targetEnemy != null)
+        {
+            targetDirection = (mbb.targetEnemy.transform.position-transform.position);
+        }
     }
 
     private void Update()
